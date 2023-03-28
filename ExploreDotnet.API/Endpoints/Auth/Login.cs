@@ -44,10 +44,10 @@ namespace ExploreDotnet.API.Endpoints.Auth
             
             var claims = new List<Claim>
             {
-                new ("UserId", user.Id.ToString(), ClaimValueTypes.Integer64),
+                new ("userId", user.Id.ToString(), ClaimValueTypes.Integer64),
             };
             
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("avd127d91b9dgyfusad"));
+            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("kosong0987654321"));
             var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
             var tokenOptions = new JwtSecurityToken(
                 "https://localhost:5001",
