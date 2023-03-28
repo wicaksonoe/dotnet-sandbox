@@ -19,8 +19,4 @@
       <ProjectReference Include="..\ExploreDotnet.Infrastructure\ExploreDotnet.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Endpoints" />
-    </ItemGroup>
-
 </Project>
