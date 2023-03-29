@@ -1,7 +1,9 @@
 using System;
 using System.Text;
+using ExploreDotnet.API.Endpoints.ActionFilters;
 using ExploreDotnet.API.Policies;
 using ExploreDotnet.Infrastructure.Data.Context;
+using ExploreDotnet.SharedKernel;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -56,6 +58,8 @@ namespace ExploreDotnet.API
                         Array.Empty<string>()
                     }
                 });
+
+                c.OperationFilter<AddRequiredHeaderParameter>();
             });
             services.AddDbContext<DatabaseContext>(opt => opt.UseInMemoryDatabase("ExploreDotnet"));
 
@@ -88,6 +92,9 @@ namespace ExploreDotnet.API
 
             // inject policies
             services.AddScoped<IAuthorizationHandler, AllowRoleUserPolicy.AllowRoleUserHandler>();
+
+            // inject action filters
+            services.AddScoped<AllowRoleUserAttribute>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
