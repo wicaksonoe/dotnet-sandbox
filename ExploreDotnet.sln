@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreDotnet.API", "ExploreDotnet.API\ExploreDotnet.API.csproj", "{B92106F2-2443-4A16-8F8B-A5EAF9294544}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreDotnet.Infrastructure", "ExploreDotnet.Infrastructure\ExploreDotnet.Infrastructure.csproj", "{1393003E-3D89-4596-83CB-BAD39E56696E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreDotnet.Core", "ExploreDotnet.Core\ExploreDotnet.Core.csproj", "{8AE9BF84-96AE-4725-941A-B43C802B5B8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreDotnet.SharedKernel", "ExploreDotnet.SharedKernel\ExploreDotnet.SharedKernel.csproj", "{2EDF2031-90E7-4B55-9B86-98D6EFB65D72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +27,9 @@ Global
 		{8AE9BF84-96AE-4725-941A-B43C802B5B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE9BF84-96AE-4725-941A-B43C802B5B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE9BF84-96AE-4725-941A-B43C802B5B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDF2031-90E7-4B55-9B86-98D6EFB65D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDF2031-90E7-4B55-9B86-98D6EFB65D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDF2031-90E7-4B55-9B86-98D6EFB65D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDF2031-90E7-4B55-9B86-98D6EFB65D72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
